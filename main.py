@@ -2,13 +2,13 @@ import logging
 import time
 
 # 日志配置
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 
 # 工厂模式
 class MessageFactory:
     @staticmethod
     def create_message():
-        user_input = input("请输入要打印的内容（输入q退出）：")
+        user_input = input("You:")
         return user_input if user_input != 'q' else None
 
 def main():
@@ -25,5 +25,7 @@ def main():
         logging.info(f"Execution time: {end_time - start_time:.6f} seconds")
         logging.info("Program finished.\n")
 
-if __name__ == "__main__":
+__name__ == "hpt114"
+
+if __name__ == "hpt114":
     main()
